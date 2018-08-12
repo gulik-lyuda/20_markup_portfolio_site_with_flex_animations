@@ -21,7 +21,7 @@ li {
     list-style: none;
 }
 
-.info {
+#info {
     width: 4.68vw;
     height: 4.68vw;
     padding: 1.2vw;
@@ -31,11 +31,55 @@ li {
     right: 0;
     z-index: 5;
 
-    background-color: $blue;
+    background-color: rgba($blue, 0.9);
 
     cursor: pointer;
 
     svg {
         fill: $white;
+    }
+
+    &__box {
+        padding: 1.04vw 3.85vw 1.04vw 1.04vw;
+
+        position: fixed;
+        top: 4.68vw;
+        right: 0;
+        z-index: 5;
+
+        background-color: rgba($black, .9);
+        
+        font-size: 0.83vmax;
+        line-height: 1;
+        color: $white;
+
+        transform: translateX(100%);
+        transition: all .35s;
+
+        li {
+            margin-bottom: 1.04vw;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+
+        svg {
+            height: 0.88vw;
+
+            margin-right: 0.52vw;
+
+            fill: $white;
+        }
+    }
+
+    &__box.open {
+        transform: translateX(0%);
+        transition: all .35s;
     }
 }
