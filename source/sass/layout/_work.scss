@@ -1,188 +1,93 @@
 .work {
-
-    h2 {
-        margin: 0 0 1.25vw 0;
-
-        font-size: 1.25vmax; // 24px;
-        font-weight: 400;
-        line-height: 1.35vmax; // 26px
-        text-transform: capitalize;
-        color: $black;
-    }
-}
-// end of .work
-
-.work__left,
-.work__right {
-    width: 50%;
-    padding: 1.56vw;
-}
-
-.work__left {
-    border-right: 1px solid rgba($background-grey, .1);
- 
-    .work__images {
-        width: 100%;
-        height: 29.16vmax;
-        overflow: hidden;
-        margin-bottom: 1.56vw;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-    // end of .work__images 
-
-    .work__description {
-        width: 100%;
-        margin-bottom: 1.56vw;
-        padding-bottom: 2.78vh;
-
-        border-bottom: 1px solid rgba($background-grey, .1);
-
-        p {
-            margin-bottom: 2.39vw;
-
-            &:last-child {
-                margin-bottom: 0;
+    
+    .section__right {
+    
+        .project_info {
+            margin-bottom: 1.56vw; // 30px
+    
+            h2 {
+                margin-bottom: 0.26vw;
             }
-
-            font-size: 0.94vmax; // 18px
-            line-height: 1.56vmax; // 30px
-            color: $font-light-grey;
-        }
-    }
-    // end of .work__description
-
-    .work__related_projects {
-        width: 100%;
-
-        .thumbnails {
-            width: 100%;
-        }
-        // end of .thumbnails
-
-        .thumbnail {
-            width: 12.5vw;
-            height: 9.48vw;
-            margin: 0;
-            padding: 0;
-
-            border: none;
-
-            img {
-                width: 100%;
-                height: 100%;
+    
+            &__item {
+                border-bottom: 1px solid rgba($background-grey, .1);
+    
+                .icon {
+                    width: 1.67vw;
+                    height: 1.67vw;
+                    margin: 0.78vw 0.78vw 0.78vw 0;
+    
+                    border-radius: 50%;
+                    border: 1px solid $blue;
+    
+                    svg {
+                        width: 50%;
+                        height: auto;
+    
+                        fill: $blue;
+                    }
+                }
+                // end of .icon
             }
+            // end of .project_info__item
         }
-        // end of .thumbnail
-    }
-    // end of .work__related_projects
-}
-// end of .work__left
-
-.work__right {
-
-    .project_info {
-        margin-bottom: 1.56vw; // 30px
-
-        h2 {
-            margin-bottom: 0.26vw;
-        }
-
-        &__item {
-            border-bottom: 1px solid rgba($background-grey, .1);
-
-            .icon {
-                width: 1.67vw;
-                height: 1.67vw;
-                margin: 0.78vw 0.78vw 0.78vw 0;
-
-                border-radius: 50%;
-                border: 1px solid $blue;
-
-                svg {
-                    width: 50%;
-                    height: auto;
-
-                    fill: $blue;
+        // end of .project_info
+    
+        .tags {
+            margin-bottom: 1.56vw;
+    
+            &__item {
+                padding: 0.73vw 0.83vw;
+                margin-right: 0.52vw;
+    
+                border: 1px solid rgba($background-grey, .1);
+                border-radius: 0.52vw;
+    
+                font-size: 0.67vmax;
+                color: $font-light-grey;
+    
+                a {
+                    text-decoration: none;
+    
+                    &:hover {
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
                 }
             }
-            // end of .icon
+            // end of .tags__item
         }
-        // end of .project_info__item
-    }
-    // end of .project_info
-
-    .tags {
-        margin-bottom: 1.56vw;
-
-        &__item {
-            padding: 0.73vw 0.83vw;
-            margin-right: 0.52vw;
-
-            border: 1px solid rgba($background-grey, .1);
-            border-radius: 0.52vw;
-
-            font-size: 0.67vmax;
-            color: $font-light-grey;
-
-            a {
-                text-decoration: none;
-
-                &:hover {
-                    font-weight: 500;
-                    text-transform: capitalize;
+        // end of .tags
+    
+        .project_gallery {
+            margin-bottom: 1.04vw;  // 20px
+    
+            &__thumbnails {
+                width: 100%;
+    
+            }
+            // end of .project_gallery__thumbnails
+    
+            &__thumbnail {
+                width: 4vw;
+                height: 4vw;
+                margin-right: 0.6vw;
+                margin-bottom: 0.6vw;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
             }
+            // end of .project_gallery__thumbnail
         }
-        // end of .tags__item
+        // end of .project_gallery
+    
+        .project_features {
+    
+           
+        }
+        // end of .project_features
     }
-    // end of .tags
-
-    .project_gallery {
-        margin-bottom: 1.04vw;  // 20px
-
-        &__thumbnails {
-            width: 100%;
-
-        }
-        // end of .project_gallery__thumbnails
-
-        &__thumbnail {
-            width: 4vw;
-            height: 4vw;
-            margin-right: 0.6vw;
-            margin-bottom: 0.6vw;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        // end of .project_gallery__thumbnail
-    }
-    // end of .project_gallery
-
-    .project_features {
-
-        &__item {
-            font-size: 0.73vmax;
-            line-height: 1.56vmax;
-            color: $font-light-grey;
-            text-transform: capitalize;
-
-            svg {
-                width: 0.68vw;
-                height: auto;
-                margin-right: 0.42vw;
-
-                fill: rgba($font-grey, 0.7);
-            }
-        }
-        // end of .project_features__item
-    }
-    // end of .project_features
+    // end of .work__right
 }
-// end of .work__right

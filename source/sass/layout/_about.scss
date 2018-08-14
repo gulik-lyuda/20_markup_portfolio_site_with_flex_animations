@@ -1,0 +1,178 @@
+.about {
+    .section__left {
+
+        .section__images {
+            height: 15.73vmax; // 302px
+        }
+        // end of .section_images 
+
+        .section__related_items {
+            .thumbnail {
+                width: 11.52vw; // 227px
+                height: 9.38vw; // 180px
+                margin-right: 1vw; // 20px
+                margin-bottom: 1vw; // 20px
+
+                border-radius: 0;
+
+                position: relative;
+    
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+
+                a {
+                    width: inherit;
+                    height: inherit;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    opacity: 0;
+
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    background-color: rgba($blue, .9);
+
+                    text-decoration: none;
+                    color: $white;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    h3 {
+                        margin: 0 0 .26vmax 0;
+                        font-size: 0.83vmax; // 16px
+                        line-height: 1.35vmax; // 26px
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 0.68vmax; // 13px
+                        line-height: 1.35vmax; // 26px
+                    }
+                }
+            } 
+            // end of .thumbnail
+
+            .you {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    padding: 1.04vmax; // 20px
+                    border-radius: 0.52vmax; // 10px
+
+                    cursor: pointer;
+
+                    background-color: $white;
+
+                    font-size: 1.25vmax; // 24px
+                    line-height: 1.35vmax; // 26px
+                    font-weight: 100;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        // end of  .section__related_items        
+    }
+    // end of .section__left
+
+    .section__right {
+
+        .section__skills {
+
+            line-height: 1.35vmax; // 26px
+
+            .progress__item_captions {
+                margin-bottom: 0.52vmax;
+            }
+            // end of .progress__item_captions
+
+            .skill__name {
+                font-size: 0.78vmax; // 15px                
+                text-transform: capitalize;
+                color: $font-grey;
+            }
+            // end of .skill__name
+
+            .skill__knowledge {
+                font-size: 0.73vmax; // 14px
+                color: $black;
+            }
+            // end of .skill__knowledge
+
+            .progress__item_bar {
+                width: 100%;
+                height: 1.77vmax; // 34px
+                margin-bottom: 1.04vw;
+
+                border: 1px solid rgba($background-grey, .7);
+
+                .skill__progress {
+                    height: 100%;
+
+                    background-color: rgba($background-grey, .7);
+                }
+                // end of .skill__progress
+            }
+            // end of .progress__item_bar
+
+        }
+        // end of .section__skills
+
+        .section__testimonials {
+            margin-bottom: 1.56vmax; // 30px;
+
+            .testimonial__author {
+                background-color: $blue;
+
+                &_photo {
+                    width: 4.16vw;
+                    height: 4.16vw;
+
+                    border: 1px solid rgba($background-grey, .7);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                // end of .testimonial__author_photo
+
+                &_info {
+                    padding-left: 1.25vw;
+
+                    font-size: 0.78vmax;
+                    line-height: 1;
+                    font-style: italic;
+                    color: $white;
+                }
+                // end of .testimonial__author_info
+            }
+            // end of .testimonial__author
+
+            .testimonial__content {
+                width: 100%;
+                padding: 1.3vw 1.56vw;
+
+                border: 1px solid rgba($background-grey, .7);
+
+                font-size: 0.94vmax; // 18px
+                line-height: 1.56vmax; // 30px
+                color: $font-light-grey;
+            }
+            // end of .testimonial__content
+        }
+        // end of .section__testimonials
+    }
+    // end of .section__right
+}
+// end of .about
