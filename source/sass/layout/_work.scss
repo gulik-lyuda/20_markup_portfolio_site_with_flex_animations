@@ -3,19 +3,19 @@
     .section__right {
     
         .project_info {
-            margin-bottom: 1.56vw; // 30px
+            margin-bottom: $wsize-30px;
     
             h2 {
-                margin-bottom: 0.26vw;
+                margin-bottom: $wsize-5px;
             }
     
             &__item {
                 border-bottom: 1px solid rgba($background-grey, .1);
     
                 .icon {
-                    width: 1.67vw;
-                    height: 1.67vw;
-                    margin: 0.78vw 0.78vw 0.78vw 0;
+                    width: $wsize-32px;
+                    height: $wsize-32px;
+                    margin: $wsize-15px $wsize-15px $wsize-15px 0;
     
                     border-radius: 50%;
                     border: 1px solid $blue;
@@ -37,13 +37,13 @@
             margin-bottom: 1.56vw;
     
             &__item {
-                padding: 0.73vw 0.83vw;
+                padding: $wsize-14px $wsize-16px;
                 margin-right: 0.52vw;
     
                 border: 1px solid rgba($background-grey, .1);
-                border-radius: 0.52vw;
+                border-radius: $wsize-10px;
     
-                font-size: 0.67vmax;
+                font-size: $font-size-13px;
                 color: $font-light-grey;
     
                 a {
@@ -60,7 +60,7 @@
         // end of .tags
     
         .project_gallery {
-            margin-bottom: 1.04vw;  // 20px
+            margin-bottom: $wsize-20px;
     
             &__thumbnails {
                 width: 100%;
@@ -69,10 +69,10 @@
             // end of .project_gallery__thumbnails
     
             &__thumbnail {
-                width: 4vw;
-                height: 4vw;
-                margin-right: 0.6vw;
-                margin-bottom: 0.6vw;
+                width: $wsize-77px;
+                height: $wsize-77px;
+                margin-right: $wsize-11_5px;
+                margin-bottom: $wsize-11_5px;
     
                 img {
                     width: 100%;
@@ -82,12 +82,6 @@
             // end of .project_gallery__thumbnail
         }
         // end of .project_gallery
-    
-        .project_features {
-    
-           
-        }
-        // end of .project_features
     }
     // end of .work__right
 }

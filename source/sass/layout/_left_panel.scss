@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-flow: column nowrap;
 
-    width: 15.63vw;
+    width: $wsize-300px;
     height: 100vh;
 
     position: fixed;
@@ -20,12 +20,12 @@
 
 .logo {
     width: 100%;
-    height: 11.57vh;
+    height: $hsize-125px;
 
     background-color: $white;
 
     svg {
-        width: 6.09vw;
+        width: $wsize-117px;
     }
 }
 // end of .logo
@@ -39,13 +39,13 @@
         align-content: center;
 
         width: 100%;
-        height: 3.23vmax;
-        padding-right: 1.3vmax;
+        height: $msize-62px;
+        padding-right: $msize-25px;
 
         text-decoration: none;
         text-transform: uppercase;
         color: $white;
-        line-height: 3.23vmax;
+        line-height: $msize-62px;
 
         background: $grey; /* Old browsers */
         background: -moz-linear-gradient(top, $grey 0%, $dark-grey 99%); /* FF3.6-15 */
@@ -81,21 +81,21 @@
 // end of .menu
 
 .filter {
-    margin-bottom: 4.63vh; // 50px
-    padding: 1.3vmax; // 25px
+    margin-bottom: $hsize-50px;
+    padding: $msize-25px; 
 
     border-bottom: 1px solid $black;
     
     &__title {
-        margin-bottom: 0.5vmax;
+        margin-bottom: $msize-10px;
 
-        font-size: 0.99vmax; // 19px
+        font-size: $font-size-19px;
         font-weight: 100; // thin
         color: $blue;
 
         svg {
-            width: 0.89vmax; // 17px
-            margin-left: 0.68vmax; // 13px
+            width: $msize-17px;
+            margin-left: $msize-13px;
 
             fill: $blue;
         }
@@ -111,10 +111,10 @@
         }
 
         a {
-            padding: 0.41vmax 0;
+            padding: $msize-8px 0;
 
-            font-size: 0.68vmax; // 13px;
-            line-height: 1.25vmax; // 24px;
+            font-size: $font-size-13px;
+            line-height: $line-height-24px;
             color: $font-grey;
             text-decoration: none;
 
@@ -131,19 +131,19 @@
 // end of .filter
 
 .socials {
-    margin-bottom: 2.03vh;
-    padding-right: 1.3vmax;
+    margin-bottom: $hsize-22px;
+    padding-right: $msize-25px;
 
     a {
-        padding-left: 0.62vmax; // 12px;
+        padding-left: $msize-12px;
 
         &:hover {
             transform: scale(1.1);
         }
 
         img {
-            width: 1.25vmax;
-            height: 1.25vmax;
+            width: $msize-24px;
+            height: $msize-24px;
         }
     }
 }
@@ -151,9 +151,9 @@
 
 footer {
     width: 100%;
-    padding-right: 1.3vmax;
+    padding-right: $msize-25px;
 
-    font-size: 0.62vmax; // 12px
+    font-size: $font-size-12px;
     font-weight: 100;
 
     text-align: right;

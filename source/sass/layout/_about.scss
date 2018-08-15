@@ -2,16 +2,16 @@
     .section__left {
 
         .section__images {
-            height: 15.73vmax; // 302px
+            height: $msize-302px;
         }
         // end of .section_images 
 
         .section__related_items {
             .thumbnail {
-                width: 11.52vw; // 227px
-                height: 9.38vw; // 180px
-                margin-right: 1vw; // 20px
-                margin-bottom: 1vw; // 20px
+                width: $wsize-227px;
+                height: $wsize-180px;
+                margin-right: $wsize-20px;
+                margin-bottom: $wsize-20px;
 
                 border-radius: 0;
 
@@ -46,16 +46,18 @@
                     }
 
                     h3 {
-                        margin: 0 0 .26vmax 0;
-                        font-size: 0.83vmax; // 16px
-                        line-height: 1.35vmax; // 26px
+                        margin: 0 0 $wsize-5px 0;
+                        font-size: $font-size-16px;
+                        line-height: $line-height-26px;
                         text-transform: uppercase;
                         font-weight: 500;
                     }
 
                     p {
-                        font-size: 0.68vmax; // 13px
-                        line-height: 1.35vmax; // 26px
+                        font-size: $font-size-13px;
+                        line-height: $line-height-26px;
+
+                        color: $white;
                     }
                 }
             } 
@@ -67,15 +69,15 @@
                 align-items: center;
 
                 span {
-                    padding: 1.04vmax; // 20px
-                    border-radius: 0.52vmax; // 10px
+                    padding: $wsize-20px;
+                    border-radius: $wsize-10px;
 
                     cursor: pointer;
 
                     background-color: $white;
 
-                    font-size: 1.25vmax; // 24px
-                    line-height: 1.35vmax; // 26px
+                    font-size: $font-size-24px;
+                    line-height: $line-height-26px;
                     font-weight: 100;
                     text-transform: uppercase;
                 }
@@ -89,22 +91,22 @@
 
         .section__skills {
 
-            line-height: 1.35vmax; // 26px
+            line-height: $line-height-26px;
 
             .progress__item_captions {
-                margin-bottom: 0.52vmax;
+                margin-bottom: $wsize-10px;
             }
             // end of .progress__item_captions
 
             .skill__name {
-                font-size: 0.78vmax; // 15px                
+                font-size: $font-size-15px;             
                 text-transform: capitalize;
                 color: $font-grey;
             }
             // end of .skill__name
 
             .skill__knowledge {
-                font-size: 0.73vmax; // 14px
+                font-size: $font-size-14px;
                 color: $black;
             }
             // end of .skill__knowledge
@@ -112,7 +114,7 @@
             .progress__item_bar {
                 width: 100%;
                 height: 1.77vmax; // 34px
-                margin-bottom: 1.04vw;
+                margin-bottom: $wsize-20px;
 
                 border: 1px solid rgba($background-grey, .7);
 
@@ -129,14 +131,14 @@
         // end of .section__skills
 
         .section__testimonials {
-            margin-bottom: 1.56vmax; // 30px;
+            margin-bottom: $wsize-30px;
 
             .testimonial__author {
                 background-color: $blue;
 
                 &_photo {
-                    width: 4.16vw;
-                    height: 4.16vw;
+                    width: $wsize-80px;
+                    height: $wsize-80px;
 
                     border: 1px solid rgba($background-grey, .7);
 
@@ -148,9 +150,9 @@
                 // end of .testimonial__author_photo
 
                 &_info {
-                    padding-left: 1.25vw;
+                    padding-left: $wsize-24px;
 
-                    font-size: 0.78vmax;
+                    font-size: $font-size-15px;
                     line-height: 1;
                     font-style: italic;
                     color: $white;
@@ -161,12 +163,12 @@
 
             .testimonial__content {
                 width: 100%;
-                padding: 1.3vw 1.56vw;
+                padding: $wsize-25px $wsize-30px;
 
                 border: 1px solid rgba($background-grey, .7);
 
-                font-size: 0.94vmax; // 18px
-                line-height: 1.56vmax; // 30px
+                font-size: $font-size-18px;
+                line-height: $line-height-30px;
                 color: $font-light-grey;
             }
             // end of .testimonial__content

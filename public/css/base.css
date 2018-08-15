@@ -5885,7 +5885,11 @@ body {
     font-weight: 400;
     line-height: 1.35vmax;
     text-transform: capitalize;
-    color: #1e282b; }
+    color: #323232; }
+  .container p {
+    font-size: 0.67vmax;
+    line-height: 1.15vmax;
+    color: #6b7072; }
 
 ul {
   padding: 0;
@@ -5897,7 +5901,7 @@ li {
 #info {
   width: 4.68vw;
   height: 4.68vw;
-  padding: 1.2vw;
+  padding: 1.25vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -5912,7 +5916,7 @@ li {
     top: 4.68vw;
     right: 0;
     z-index: 5;
-    background-color: rgba(30, 40, 43, 0.9);
+    background-color: rgba(50, 50, 50, 0.9);
     font-size: 0.83vmax;
     line-height: 1;
     color: #fff;
@@ -5994,7 +5998,7 @@ li {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404a4f', endColorstr='#2e363a',GradientType=0 );
   /* IE6-9 */
-  border-bottom: 1px solid #1e282b; }
+  border-bottom: 1px solid #323232; }
   .menu a:hover {
     background: #31bcba;
     /* Old browsers */
@@ -6022,9 +6026,9 @@ li {
 .filter {
   margin-bottom: 4.63vh;
   padding: 1.3vmax;
-  border-bottom: 1px solid #1e282b; }
+  border-bottom: 1px solid #323232; }
   .filter__title {
-    margin-bottom: 0.5vmax;
+    margin-bottom: 0.52vmax;
     font-size: 0.99vmax;
     font-weight: 100;
     color: #2db8b7; }
@@ -6039,7 +6043,7 @@ li {
       text-align: right; }
     .filter__tags a {
       padding: 0.41vmax 0;
-      font-size: 0.68vmax;
+      font-size: 0.67vmax;
       line-height: 1.25vmax;
       color: #6b7072;
       text-decoration: none; }
@@ -6062,7 +6066,7 @@ li {
 footer {
   width: 100%;
   padding-right: 1.3vmax;
-  font-size: 0.62vmax;
+  font-size: 0.63vmax;
   font-weight: 100;
   text-align: right; }
 
@@ -6105,13 +6109,13 @@ footer {
       opacity: 1; }
   .gallery__item h2 {
     margin: 0 0 0.38vw;
-    font-size: 1.25vw;
-    line-height: 1.56vw;
+    font-size: 1.25vmax;
+    line-height: 1.56vmax;
     font-weight: 300; }
   .gallery__item h3 {
     margin: 0;
-    font-size: 0.63vw;
-    line-height: .63vw;
+    font-size: 0.63vmax;
+    line-height: 1.56vmax;
     font-weight: 300; }
     .gallery__item h3:after {
       content: "";
@@ -6177,8 +6181,8 @@ footer {
 .about .section__left .section__related_items .thumbnail {
   width: 11.52vw;
   height: 9.38vw;
-  margin-right: 1vw;
-  margin-bottom: 1vw;
+  margin-right: 1.04vw;
+  margin-bottom: 1.04vw;
   border-radius: 0;
   position: relative; }
   .about .section__left .section__related_items .thumbnail:nth-child(3n) {
@@ -6210,14 +6214,15 @@ footer {
     .about .section__left .section__related_items .thumbnail a:hover {
       opacity: 1; }
     .about .section__left .section__related_items .thumbnail a h3 {
-      margin: 0 0 .26vmax 0;
+      margin: 0 0 0.26vw 0;
       font-size: 0.83vmax;
       line-height: 1.35vmax;
       text-transform: uppercase;
       font-weight: 500; }
     .about .section__left .section__related_items .thumbnail a p {
-      font-size: 0.68vmax;
-      line-height: 1.35vmax; }
+      font-size: 0.67vmax;
+      line-height: 1.35vmax;
+      color: #fff; }
 
 .about .section__left .section__related_items .you {
   display: -webkit-box;
@@ -6230,8 +6235,8 @@ footer {
       -ms-flex-align: center;
           align-items: center; }
   .about .section__left .section__related_items .you span {
-    padding: 1.04vmax;
-    border-radius: 0.52vmax;
+    padding: 1.04vw;
+    border-radius: 0.52vw;
     cursor: pointer;
     background-color: #fff;
     font-size: 1.25vmax;
@@ -6242,14 +6247,14 @@ footer {
 .about .section__right .section__skills {
   line-height: 1.35vmax; }
   .about .section__right .section__skills .progress__item_captions {
-    margin-bottom: 0.52vmax; }
+    margin-bottom: 0.52vw; }
   .about .section__right .section__skills .skill__name {
     font-size: 0.78vmax;
     text-transform: capitalize;
     color: #6b7072; }
   .about .section__right .section__skills .skill__knowledge {
     font-size: 0.73vmax;
-    color: #1e282b; }
+    color: #323232; }
   .about .section__right .section__skills .progress__item_bar {
     width: 100%;
     height: 1.77vmax;
@@ -6260,7 +6265,7 @@ footer {
       background-color: rgba(180, 183, 184, 0.7); }
 
 .about .section__right .section__testimonials {
-  margin-bottom: 1.56vmax; }
+  margin-bottom: 1.56vw; }
   .about .section__right .section__testimonials .testimonial__author {
     background-color: #2db8b7; }
     .about .section__right .section__testimonials .testimonial__author_photo {
@@ -6283,3 +6288,163 @@ footer {
     font-size: 0.94vmax;
     line-height: 1.56vmax;
     color: #a3a3a3; }
+
+.blog .container {
+  background-color: transparent; }
+
+.blog #posts_list {
+  margin-bottom: 1.04vw; }
+
+.blog .posts_column {
+  margin-right: 0.83vw; }
+  .blog .posts_column:last-child {
+    margin-right: 0; }
+
+.blog .posts__item {
+  width: 15.31vw;
+  height: auto;
+  margin-bottom: 0.83vw;
+  overflow: hidden;
+  background-color: #fff; }
+
+.blog .post__details {
+  padding: 1.04vw; }
+  .blog .post__details svg {
+    width: 0.78vw;
+    height: 0.78vw;
+    margin-right: 0.52vw;
+    fill: #6b7072; }
+  .blog .post__details p {
+    margin: 0; }
+
+.blog .post__comments {
+  margin-right: 1.04vw; }
+
+.blog .post__content {
+  padding: 1.04vw;
+  border-bottom: 1px solid rgba(180, 183, 184, 0.7); }
+  .blog .post__content h2 {
+    margin-bottom: 0.78vw; }
+
+.blog .post__description {
+  margin: 0; }
+
+.blog .gallery_post {
+  width: inherit; }
+  .blog .gallery_post__images {
+    width: 100%; }
+    .blog .gallery_post__images img {
+      width: 100%;
+      height: 12vw; }
+
+.blog .image_post {
+  height: 13.65vw; }
+  .blog .image_post a {
+    width: 100%;
+    height: inherit;
+    position: relative;
+    background-color: transparent; }
+    .blog .image_post a:hover svg {
+      opacity: 1; }
+    .blog .image_post a img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 0; }
+    .blog .image_post a svg {
+      width: 3.12vw;
+      height: 3.12vw;
+      position: absolute;
+      top: calc(50% - $wsize-60px/2);
+      left: calc(50% - $wsize-60px/2);
+      z-index: 1;
+      opacity: 0;
+      fill: #fff; }
+
+.blog .link_post {
+  padding: 2.08vw 1.56vw;
+  background-color: #2db8b7; }
+  .blog .link_post p, .blog .link_post a {
+    text-align: center;
+    color: #fff; }
+  .blog .link_post p {
+    margin-bottom: 0.42vw;
+    font-size: 0.94vmax;
+    line-height: 1.04vmax; }
+  .blog .link_post a {
+    font-size: 0.73vmax;
+    line-height: 1.15vmax;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none; }
+
+.blog .video_post {
+  width: 100%; }
+  .blog .video_post video {
+    width: 100%;
+    height: 9.59vw; }
+
+.blog .standard_post {
+  width: 100%; }
+  .blog .standard_post__images {
+    width: 100%; }
+    .blog .standard_post__images img {
+      width: 100%;
+      height: 7.34vw; }
+
+.blog .big_height img {
+  height: 15.46vw; }
+
+.blog .aside_post {
+  width: 100%;
+  background-color: #2db8b7; }
+  .blog .aside_post .post__content {
+    margin-left: 0.78vw;
+    padding: 1.25vw;
+    background-color: #242b2e; }
+    .blog .aside_post .post__content h2 {
+      margin-bottom: 1.04vw;
+      color: #fff;
+      font-size: 1.09vmax;
+      line-height: 1.35vmax; }
+  .blog .aside_post .post__description {
+    color: #9c9c9c;
+    font-size: 0.73vmax;
+    line-height: 1.25vmax; }
+
+.blog .quote_post {
+  width: 100%;
+  padding: 1.82vw 1.56vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #242b2e;
+  line-height: 1.35vmax; }
+  .blog .quote_post__content {
+    margin-bottom: 1.04vw;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.09vmax;
+    color: #fff; }
+  .blog .quote_post__icon {
+    width: 1.25vw;
+    height: 0.94vw;
+    margin-bottom: 0.94vw; }
+    .blog .quote_post__icon svg {
+      width: 100%;
+      height: 100%;
+      fill: #2db8b7; }
+  .blog .quote_post__author {
+    font-size: 0.94vmax;
+    color: #2db8b7; }
+
+.blog .load_more_btn {
+  padding: 1.3vw 1.56vw;
+  background-color: #2db8b7;
+  border: none;
+  font-size: 1.09vmax;
+  line-height: 1.56vmax;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff; }

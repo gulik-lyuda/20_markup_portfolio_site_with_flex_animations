@@ -44,16 +44,16 @@
         h2 {
             margin: 0 0 0.38vw;
 
-            font-size: 1.25vw; // 24px
-            line-height: 1.56vw; // 30px;
+            font-size: $font-size-24px;
+            line-height: $line-height-30px;
             font-weight: 300;
         }
 
         h3 {
             margin: 0;
 
-            font-size: 0.63vw; // 12px
-            line-height: .63vw; // 30px;
+            font-size: $font-size-12px;
+            line-height: $line-height-30px;
             font-weight: 300;
 
             &:after {
