@@ -1,63 +1,8 @@
-.work {
+.work_item {
     
     .section__right {
     
-        .project_info {
-            margin-bottom: $wsize-30px;
-    
-            h2 {
-                margin-bottom: $wsize-5px;
-            }
-    
-            &__item {
-                border-bottom: 1px solid rgba($background-grey, .1);
-    
-                .icon {
-                    width: $wsize-32px;
-                    height: $wsize-32px;
-                    margin: $wsize-15px $wsize-15px $wsize-15px 0;
-    
-                    border-radius: 50%;
-                    border: 1px solid $blue;
-    
-                    svg {
-                        width: 50%;
-                        height: auto;
-    
-                        fill: $blue;
-                    }
-                }
-                // end of .icon
-            }
-            // end of .project_info__item
-        }
-        // end of .project_info
-    
-        .tags {
-            margin-bottom: 1.56vw;
-    
-            &__item {
-                padding: $wsize-14px $wsize-16px;
-                margin-right: 0.52vw;
-    
-                border: 1px solid rgba($background-grey, .1);
-                border-radius: $wsize-10px;
-    
-                font-size: $font-size-13px;
-                color: $font-light-grey;
-    
-                a {
-                    text-decoration: none;
-    
-                    &:hover {
-                        font-weight: 500;
-                        text-transform: capitalize;
-                    }
-                }
-            }
-            // end of .tags__item
-        }
-        // end of .tags
+        
     
         .project_gallery {
             margin-bottom: $wsize-20px;
@@ -85,3 +30,4 @@
     }
     // end of .work__right
 }
+// end of .work_item

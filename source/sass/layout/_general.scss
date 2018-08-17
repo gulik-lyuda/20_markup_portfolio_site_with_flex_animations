@@ -12,7 +12,8 @@ body {
     min-height: 100vh;
     padding-left: $wsize-300px; // is equal to left navigation panel's width
 
-    &__description {
+    &__description,
+    &__comments {
         width: 100%;
         margin-bottom: $wsize-30px;
         padding-bottom: $hsize-30px;
@@ -31,7 +32,82 @@ body {
             color: $font-light-grey;
         }
     }
-    // end of .section__description
+    // end of .section__description & .section__comments
+
+    &__comments_list {
+
+        ul {
+            position: relative;
+
+            li {
+                margin-bottom: $wsize-32px;
+            }
+
+            ul {
+                margin-left: $wsize-46px;
+                padding-left: $wsize-46px;
+
+                &:before {
+                    width: $wsize-40px;
+                    height: $wsize-40px;
+
+                    position: absolute;
+                    left: -$wsize-20px;
+
+                    content: '';
+                    display: block;
+
+                    background-image: url('../images/icons/angle.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }      
+    }
+    // end of .section__comments_list
+
+    &__comment {
+
+        &_photo {
+            width: $wsize-80px;
+            height: $wsize-80px;
+            margin-right: $wsize-20px;
+
+            img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+
+        &_details {                    
+
+            h3 {    
+                padding-bottom: $wsize-5px;
+                margin-top: 0;
+                margin-bottom: $wsize-8px;    
+
+                font-size: $font-size-14px;
+                line-height: $line-height-22px;
+                color: $dark-grey;
+
+                border-bottom: 1px solid rgba($font-light-grey, .3);
+
+                span {
+                    color: rgba($font-light-grey, .5);
+                }
+            }
+            // end of h3
+
+            .text {
+                font-size: $font-size-18px;
+                line-height: $line-height-26px;
+            }
+            // end of .text
+        }
+        // end of .section__comment_details
+    }
+    // end of .section__comment
 }
 // end of .section
 
@@ -41,6 +117,23 @@ body {
     padding: 0;
 
     background-color: $white;
+
+    .icon {
+        width: $wsize-32px;
+        height: $wsize-32px;
+        margin: $wsize-15px $wsize-15px $wsize-15px 0;
+
+        border-radius: 50%;
+        border: 1px solid $blue;
+
+        svg {
+            width: 50%;
+            height: auto;
+
+            fill: $blue;
+        }
+    }
+    // end of .icon
 
     .section__left,
     .section__right {
@@ -59,7 +152,7 @@ body {
     
             img {
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
         }
         // end of .section__images 
@@ -93,6 +186,46 @@ body {
     // end of .section__left
 
     .section__right {
+
+        .item_info {
+            margin-bottom: $wsize-30px;
+    
+            h2 {
+                margin-bottom: $wsize-5px;
+            }
+    
+            &__value {
+                border-bottom: 1px solid rgba($background-grey, .1);
+            }
+            // end of .item_info__value
+        }
+        // end of .item_info
+
+        .tags {
+            margin-bottom: 1.56vw;
+    
+            &__item {
+                padding: $wsize-14px $wsize-16px;
+                margin-right: 0.52vw;
+    
+                border: 1px solid rgba($background-grey, .1);
+                border-radius: $wsize-10px;
+    
+                font-size: $font-size-13px;
+                color: $font-light-grey;
+    
+                a {
+                    text-decoration: none;
+    
+                    &:hover {
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            // end of .tags__item
+        }
+        // end of .tags
 
         .marked__item {
             font-size: $font-size-14px;
