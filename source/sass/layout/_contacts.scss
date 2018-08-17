@@ -1,5 +1,5 @@
 .contacts {
-    
+    position: relative;
 
     background-image: url('../images/backgrounds/contacts_bg.png');
     background-position: center;
@@ -14,8 +14,12 @@
         background-color: transparent;
         
         .contacts_box {
-            background-color: $white;
-            padding: $wsize-30px;   
+            padding: $wsize-30px;  
+
+            position: relative;
+            z-index: 2;
+
+            background-color: $white;             
         }
         
         h2 {
@@ -30,5 +34,15 @@
         }
     }
     // end of .container
+
+    .google_map {
+        width: 100%;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
 }
 // end of .contacts

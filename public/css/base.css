@@ -6541,6 +6541,7 @@ footer {
   text-decoration: none; }
 
 .contacts {
+  position: relative;
   background-image: url("../images/backgrounds/contacts_bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -6551,11 +6552,20 @@ footer {
     padding: 1.56vw;
     background-color: transparent; }
     .contacts .container .contacts_box {
-      background-color: #fff;
-      padding: 1.56vw; }
+      padding: 1.56vw;
+      position: relative;
+      z-index: 2;
+      background-color: #fff; }
     .contacts .container h2 {
       text-transform: none; }
     .contacts .container p {
       margin-bottom: 0.52vw;
       font-size: 0.94vmax;
       line-height: 1.56vmax; }
+  .contacts .google_map {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; }
