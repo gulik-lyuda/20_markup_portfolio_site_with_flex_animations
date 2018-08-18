@@ -7,7 +7,7 @@
     #posts_list {
         margin-bottom: $wsize-20px;
     }
-    // end of .posts_list
+    // end of #posts_list
 
     .posts_column {
         margin-right: $wsize-16px;
@@ -273,18 +273,11 @@
 }
 // end of .blog
 
-.blog__item {
-
-    
+.blog__item {    
 
     .section__right {
 
         .archives {
-
-            &__list {
-
-            }
-            // end of .archives__list
 
             &__item {
 

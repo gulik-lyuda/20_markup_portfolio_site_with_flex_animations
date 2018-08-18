@@ -5882,7 +5882,7 @@ body {
   .container .icon {
     width: 1.67vw;
     height: 1.67vw;
-    margin: 0.78vw 0.78vw 0.78vw 0;
+    margin: 2.39vw 2.39vw 2.39vw 0;
     border-radius: 50%;
     border: 1px solid #2db8b7; }
     .container .icon svg {
@@ -6194,8 +6194,8 @@ footer {
   position: relative;
   overflow: hidden; }
   .gallery__item img {
-    width: calc( 100% + 5vw);
-    height: auto;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 1; }
   .gallery__item a {
@@ -6273,8 +6273,8 @@ footer {
   .about .section__left .section__related_items .thumbnail:nth-child(3n) {
     margin-right: 0; }
   .about .section__left .section__related_items .thumbnail a {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -6564,8 +6564,333 @@ footer {
       line-height: 1.56vmax; }
   .contacts .google_map {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1; }
+
+.menu_btn {
+  display: none; }
+
+@media (max-width: 320px), (max-width: 768px), (max-width: 1024px) {
+  body {
+    font-size: 2.5vmax;
+    line-height: 4.6vmax; }
+  .left_panel {
+    position: relative;
+    width: 100%;
+    height: auto; }
+  .logo {
+    height: 20vh; }
+    .logo svg {
+      width: 40vmin;
+      padding: 3.12vw; }
+  #menu_btn {
+    width: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #242b2e;
+    border: none;
+    font-size: 3vmax;
+    color: #fff; }
+  .menu {
+    display: none; }
+    .menu a {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 7vmax;
+      font-size: 2.5vmax;
+      line-height: 7vmax; }
+    .menu.open {
+      display: block; }
+  .filter,
+  .socials,
+  footer {
+    display: none; }
+  .section {
+    padding-left: 0; }
+  .container .icon {
+    width: 9.59vw;
+    height: 9.59vw;
+    margin: 4.68vw 4.68vw 4.68vw 0; }
+  .container .section__left,
+  .container .section__right {
+    width: 100%;
+    padding: 4.68vw 4.68vw 0 4.68vw; }
+  .container .section__left .section__images {
+    height: 60vw;
+    margin-bottom: 4.68vw; }
+  .container .section__left .section__related_items {
+    margin-bottom: 4.68vw; }
+    .container .section__left .section__related_items .thumbnail {
+      width: 33.33%;
+      height: 25vw; }
+  .container .section__right {
+    padding-top: 0; }
+    .container .section__right .item_info h2 {
+      margin-bottom: 4.16vw; }
+    .container .section__right .tags {
+      margin-bottom: 4.68vw; }
+      .container .section__right .tags__item {
+        padding: 2.05vw 3.12vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+        font-size: 2vmax; }
+    .container .section__right .project_gallery {
+      margin-bottom: 4.68vw; }
+      .container .section__right .project_gallery__thumbnail {
+        width: 15.63vw;
+        height: 15.63vw;
+        margin-right: 1.04vw;
+        margin-bottom: 1.04vw; }
+    .container .section__right .marked__item {
+      margin-bottom: 4.68vw;
+      font-size: 2.5vmax;
+      line-height: 4.5vmax; }
+      .container .section__right .marked__item svg {
+        width: 3.12vw;
+        margin-right: 1.56vw; }
+  .container h2 {
+    margin: 4.16vw 0;
+    font-size: 4.5vmax;
+    line-height: 5vmax; }
+  .container p {
+    margin-bottom: 3.12vw;
+    font-size: 3vmax;
+    line-height: 4.25vmax; }
+  .container .section__comments_list ul li {
+    margin-bottom: 4.68vw; }
+  .container .section__comments_list ul ul {
+    margin-left: 6.09vw;
+    padding-left: 6.09vw; }
+    .container .section__comments_list ul ul:before {
+      width: 6.09vw;
+      height: 6.09vw;
+      left: -3.12vw; }
+  .container .section__comment_photo {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-right: 3.12vw; }
+  .container .section__comment_details h3 {
+    padding-bottom: 1.04vw;
+    margin-bottom: 1.25vw;
+    font-size: 1.7vmax;
+    line-height: 2.5vmax; }
+  .container .section__comment_details .text {
+    font-size: 1.9vmax;
+    line-height: 2.75vmax; }
+  .container .section__add_comment,
+  .container .section__add_message {
+    margin-bottom: 3vmax; }
+    .container .section__add_comment form,
+    .container .section__add_message form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; }
+    .container .section__add_comment .form__left,
+    .container .section__add_comment .form__right,
+    .container .section__add_message .form__left,
+    .container .section__add_message .form__right {
+      width: 100%; }
+    .container .section__add_comment .form__input,
+    .container .section__add_message .form__input {
+      margin-bottom: 2.05vw;
+      font-size: 2.5vmax;
+      line-height: 3.5vmax; }
+      .container .section__add_comment .form__input:last-child,
+      .container .section__add_message .form__input:last-child {
+        margin-bottom: 2.05vw; }
+      .container .section__add_comment .form__input .icon,
+      .container .section__add_message .form__input .icon {
+        margin: 1vw; }
+      .container .section__add_comment .form__input_icon,
+      .container .section__add_message .form__input_icon {
+        padding: 2.39vw; }
+      .container .section__add_comment .form__input input,
+      .container .section__add_message .form__input input {
+        padding-left: 2.39vw; }
+      .container .section__add_comment .form__input textarea,
+      .container .section__add_message .form__input textarea {
+        height: 35vw;
+        padding-top: 2.39vw;
+        padding-left: 2.39vw; }
+    .container .section__add_comment .post_comment_btn,
+    .container .section__add_comment .post_message_btn,
+    .container .section__add_message .post_comment_btn,
+    .container .section__add_message .post_message_btn {
+      padding: 3.85vw 4.68vw;
+      font-size: 2.5vmax;
+      line-height: 3.5vmax; }
+  .gallery__item {
+    width: 50%;
+    max-width: 50vw;
+    height: 35vw; }
+    .gallery__item img {
+      width: 100%;
+      height: 100%; }
+    .gallery__item h2 {
+      margin-bottom: 1vw;
+      font-size: 2.5vmax;
+      line-height: 2.5vmax; }
+    .gallery__item h3 {
+      font-size: 1.75vmax;
+      line-height: 2.5vmax; }
+      .gallery__item h3:after {
+        margin: 3vw auto; }
+    .gallery__item .view_btn {
+      width: 10vw;
+      height: 10vw; }
+  .about .section__left .section__related_items .thumbnail {
+    width: 48%;
+    height: 40vw;
+    margin-right: 1.56vw;
+    margin-bottom: 1.56vw; }
+    .about .section__left .section__related_items .thumbnail:nth-child(3n) {
+      margin-right: 1.56vw; }
+    .about .section__left .section__related_items .thumbnail a h3 {
+      margin: 0 0 1.56vw 0;
+      font-size: 2.5vmax;
+      line-height: 5vmax; }
+    .about .section__left .section__related_items .thumbnail a p {
+      font-size: 2vmax;
+      line-height: 4vmax; }
+  .about .section__left .section__related_items .you span {
+    padding: 3.12vw;
+    border-radius: 1.56vw;
+    font-size: 4vmax;
+    line-height: 5.5vmax; }
+  .about .section__right .section__skills {
+    line-height: 7.5vmax; }
+    .about .section__right .section__skills .progress__item_captions {
+      margin-bottom: 1.56vw; }
+    .about .section__right .section__skills .skill__name {
+      font-size: 2.5vmax; }
+    .about .section__right .section__skills .skill__knowledge {
+      font-size: 2.5vmax; }
+    .about .section__right .section__skills .progress__item_bar {
+      height: 3.5vmax;
+      margin-bottom: 2.05vw; }
+  .about .section__right .section__testimonials {
+    margin-bottom: 4.16vw; }
+    .about .section__right .section__testimonials .testimonial__author_photo {
+      width: 25vw;
+      height: 25vw; }
+      .about .section__right .section__testimonials .testimonial__author_photo img {
+        width: 100%;
+        height: 100%; }
+    .about .section__right .section__testimonials .testimonial__author_info {
+      padding: 0 4vmax;
+      font-size: 3.5vmax; }
+    .about .section__right .section__testimonials .testimonial__content {
+      padding: 3.85vw 4.68vw;
+      font-size: 2.75vmax;
+      line-height: 4vmax; }
+  .blog #posts_list {
+    margin-bottom: 3.12vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+  .blog .posts_column {
+    margin-right: 0; }
+  .blog .posts__item {
+    width: 100%;
+    margin-bottom: 4.16vw; }
+  .blog .post__details {
+    padding: 2.05vw; }
+    .blog .post__details svg {
+      width: 4.68vw;
+      height: 4.68vw;
+      margin-right: 2.05vw; }
+    .blog .post__details p {
+      margin: 0; }
+  .blog .post__comments {
+    margin-right: 4.16vw; }
+  .blog .post__content {
+    padding: 3.12vw; }
+    .blog .post__content h2 {
+      margin-bottom: 3.12vw; }
+  .blog .gallery_post__images img {
+    height: 50vw; }
+  .blog .image_post {
+    height: 70vw; }
+    .blog .image_post a svg {
+      width: 15.63vw;
+      height: 15.63vw;
+      top: calc(50% - $wsize-300px/2);
+      left: calc(50% - $wsize-300px/2); }
+  .blog .link_post {
+    padding: 6.09vw 4.68vw; }
+    .blog .link_post p {
+      margin-bottom: 1.25vw;
+      font-size: 2.5vmax;
+      line-height: 3vmax; }
+    .blog .link_post a {
+      font-size: 3vmax;
+      line-height: 4vmax; }
+  .blog .video_post video {
+    height: 50vw; }
+  .blog .standard_post__images img {
+    height: 60vw; }
+  .blog .big_height img {
+    height: 100vw; }
+  .blog .aside_post .post__content {
+    margin-left: 9.38vw;
+    padding: 9.38vw; }
+    .blog .aside_post .post__content h2 {
+      margin-bottom: 4.16vw;
+      font-size: 3.5vmax;
+      line-height: 4vmax; }
+  .blog .aside_post .post__description {
+    font-size: 2.5vmax;
+    line-height: 3.5vmax; }
+  .blog .quote_post {
+    padding: 6.09vw 4.68vw;
+    line-height: 3.5vmax; }
+    .blog .quote_post__content {
+      margin-bottom: 4.16vw;
+      font-size: 2.5vmax; }
+    .blog .quote_post__icon {
+      width: 4.16vw;
+      height: 4.16vw;
+      margin-bottom: 3.85vw; }
+    .blog .quote_post__author {
+      font-size: 3vmax; }
+  .blog .load_more_btn {
+    padding: 3.85vw 4.68vw;
+    margin-bottom: 3vmax;
+    font-size: 2.5vmax;
+    line-height: 3.5vmax; }
+  .blog__item .section__right .archives {
+    margin-bottom: 4vmax; }
+    .blog__item .section__right .archives__item a {
+      font-size: 2.5vmax;
+      line-height: 3.5vmax; }
+  .contacts .container {
+    width: 75%; }
+    .contacts .container p {
+      margin-bottom: 2.05vw;
+      font-size: 2.5vmax;
+      line-height: 3.5vmax; }
+  #info {
+    width: 15.63vw;
+    height: 15.63vw;
+    padding: 3.85vw; }
+    #info__box {
+      padding: 4.68vw 12.5vw 4.68vw 4.68vw;
+      top: 15.63vw;
+      font-size: 2vmax;
+      line-height: 1; }
+      #info__box li {
+        margin-bottom: 4.16vw; }
+      #info__box svg {
+        height: 2.5vmax;
+        margin-right: 3.12vw; } }
